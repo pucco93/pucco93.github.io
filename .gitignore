@@ -1,0 +1,7 @@
+### Gatsby ###
+node_modules/
+
+.cache/
+public
+
+src/gatsby-types.d.ts86b303ee60042a63061
