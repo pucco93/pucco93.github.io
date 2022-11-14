@@ -10,7 +10,7 @@ const Triangle = (props) => {
         left: `${props.positionX}%`,
         zIndex: -1,
         transform: 'scaleY(-1)',
-        transition: 'all 50000ms',
+        transition: 'all 100000ms',
         transitionTimingFunction: 'linear',
     };
 
@@ -22,7 +22,7 @@ const Triangle = (props) => {
         } else {
             pulse(triangleRef, "scaleY(-1)");
         }
-    }, []);
+    }, [props.animation]);
 
     return (
         <svg ref={triangleRef} className='triangle' height={props.height} width={props.width} style={style} viewBox={`0 0 ${props.width} ${props.height}`}>

@@ -9,7 +9,7 @@ const Square = (props) => {
         top: `${props.positionY}%`,
         left: `${props.positionX}%`,
         zIndex: -1,
-        transition: 'all 50000ms',
+        transition: 'all 100000ms',
         transitionTimingFunction: 'linear',
     };
 
@@ -21,7 +21,7 @@ const Square = (props) => {
         } else {
             pulse(squareRef);
         }
-    }, []);
+    }, [props.animation]);
 
     return (
         <svg ref={squareRef} className='square' style={style} xmlns="http://www.w3.org/2000/svg" width={`${props.width}px`} height={`${props.height}px`}>

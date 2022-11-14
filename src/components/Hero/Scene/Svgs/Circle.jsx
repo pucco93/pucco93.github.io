@@ -6,10 +6,10 @@ const Circle = (props) => {
 
     const style = {
         position: 'absolute',
-        top: `${props.positionY}%`,
-        left: `${props.positionX}%`,
+        top: `${props && props.positionY ? props.positionY : ""}%`,
+        left: `${props && props.positionX ? props.positionX : ""}%`,
         zIndex: -1,
-        transition: 'all 50000ms',
+        transition: 'all 100000ms',
         transitionTimingFunction: 'linear',
     };
 
@@ -21,7 +21,7 @@ const Circle = (props) => {
         } else {
             pulse(circleRef);
         }
-    }, []);
+    }, [props.animation]);
 
     return(
         <svg ref={circleRef} className='circle' style={style} xmlns="http://www.w3.org/2000/svg" width={`${props.width * 2}px`} height={`${props.height * 2}px`}>

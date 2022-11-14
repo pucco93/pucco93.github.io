@@ -1,13 +1,13 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import LinkedinIcon from './LinkedinIcon';
 import Scene from './Scene/Scene';
-import PortfolioContext from '../../context/context';
+// import PortfolioContext from '../../context/context';
 
 const Header = () => {
-  const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  // const { hero } = useContext(PortfolioContext);
+  // const { title, name, subtitle, cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -33,7 +33,7 @@ const Header = () => {
             <span className="text-color-main"> Alessandro</span>
             <br />
             {/* {subtitle || "I'm the Unknown Developer."} */}
-            I'm a frontend engineer based in Europe.
+            I`&apos;`m a frontend engineer based in Europe.
             <br />
             The site is under construction.
           </h1>

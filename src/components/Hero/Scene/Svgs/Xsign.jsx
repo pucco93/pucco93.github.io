@@ -1,4 +1,4 @@
-import React, { useRef, useEffect } from 'react';
+import React, { useRef } from 'react';
 import { rotate, pulse, translate } from '../../../../utilities/utilities';
 
 const Xsign = (props) => {
@@ -9,7 +9,7 @@ const Xsign = (props) => {
         top: `${props.positionY}%`,
         left: `${props.positionX}%`,
         zIndex: -1,
-        transition: 'all 50000ms',
+        transition: 'all 100000ms',
         transitionTimingFunction: 'linear',
     };
 
@@ -21,7 +21,7 @@ const Xsign = (props) => {
         } else {
             pulse(xsignRef);
         }
-    }, []);
+    }, [props.animation]);
 
     return (
         <svg ref={xsignRef} className='x-sign' style={style} xmlns="http://www.w3.org/2000/svg" width={props.width} height={props.height} version="1.1" viewBox={`0 0 671 671`}>

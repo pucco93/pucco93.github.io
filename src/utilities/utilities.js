@@ -6,7 +6,7 @@ export const rotate = (ref, direction, rotationNumber, precedentTransform = "") 
         ref.current.style.transform = `rotate(-${degrees}deg ${precedentTransform})`;
     }
     rotationNumber = rotationNumber + 1;
-    setTimeout(() => rotate(ref, direction, rotationNumber, precedentTransform), 50000);
+    setTimeout(() => rotate(ref, direction, rotationNumber, precedentTransform), 100000);
 };
 
 export const translate = (ref, precedentTransform = "") => {
