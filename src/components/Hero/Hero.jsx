@@ -33,7 +33,7 @@ const Header = () => {
             <span className="text-color-main"> Alessandro</span>
             <br />
             {/* {subtitle || "I'm the Unknown Developer."} */}
-            Im a frontend engineer based in Europe.
+            I'm a frontend engineer based in Europe.
             <br />
             The site is under construction.
           </h1>
